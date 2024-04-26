@@ -6,11 +6,10 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 echo "+##############################################+"
-echo "# Welcome To Anural!                           #"
+echo "# Welcome To Pollen!                           #"
 echo "# The User Policy Editor                       #"
 echo "# -------------------------------------------- #"
 echo "# Developers:                                  #"
-echo "# - Xotic                                      #"
 echo "# - OlyB                                       #"
 echo "# - Rafflesia                                  #"
 echo "# - Scaratek                                   #"
@@ -31,8 +30,7 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com" ],
-  "URLAllowlist": [],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "javascript://", "javascript://*", "chrome://inspect" "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm" ],
   "SystemFeaturesDisableList": [],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
@@ -46,7 +44,7 @@ echo '{
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
   "ExtensionInstallBlocklist": null,
-  "ExtensionInstallForcelist": null,
+  "ExtensionInstallForcelist": "cjpalhdlnbpafiamejdnhcphjbkeiagm",
   "ExtensionSettings": null,
   "ReportDeviceAudioStatus": true,
   "ReportDeviceActivityTimes": true,
