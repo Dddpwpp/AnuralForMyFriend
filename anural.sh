@@ -6,10 +6,11 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 echo "+##############################################+"
-echo "# Welcome To Pollen!                           #"
+echo "# Welcome To Anural!                           #"
 echo "# The User Policy Editor                       #"
 echo "# -------------------------------------------- #"
 echo "# Developers:                                  #"
+echo "# - Xotic                                      #"
 echo "# - OlyB                                       #"
 echo "# - Rafflesia                                  #"
 echo "# - Scaratek                                   #"
@@ -30,8 +31,9 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "javascript://", "javascript://*", "chrome://inspect" "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm" ],
-  "SystemFeaturesDisableList": [],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm" ],
+  "URLAllowlist": [],
+  "SystemFeaturesDisableList": [ crosh ],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "CACertificateManagementAllowed": "2",
@@ -40,7 +42,7 @@ echo '{
   "AllowDeletingBrowserHistory": false,
   "AllowDinosaurEasterEgg": true,
   "IncognitoModeAvailability": 1,
-  "AllowScreenLock": true,
+  "AllowScreenLock": false,
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
   "ExtensionInstallBlocklist": null,
@@ -92,7 +94,7 @@ echo '{
   "DevicePowerAdaptiveChargingEnabled": "true",
   "DeviceGuestModeEnabled": "false",
   "DeviceUnaffiliatedCrostiniAllowed": "true",
-  "VirtualMachinesAllowed": "true",
+  "VirtualMachinesAllowed": "false",
   "CrostiniAllowed": "true",
   "DefaultCookiesSetting": "1",
   "VmManagementCliAllowed": "true",
