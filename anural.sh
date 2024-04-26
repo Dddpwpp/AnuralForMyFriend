@@ -6,10 +6,11 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 echo "+##############################################+"
-echo "# Welcome To Pollen!                           #"
+echo "# Welcome To Anural!                           #"
 echo "# The User Policy Editor                       #"
 echo "# -------------------------------------------- #"
 echo "# Developers:                                  #"
+echo "# - Xotic                                      #"
 echo "# - OlyB                                       #"
 echo "# - Rafflesia                                  #"
 echo "# - Scaratek                                   #"
