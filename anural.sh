@@ -39,7 +39,7 @@ echo '{
   "DefaultPopupsSetting": 1,
   "AllowDeletingBrowserHistory": false,
   "AllowDinosaurEasterEgg": true,
-  "IncognitoModeAvailability": 0,
+  "IncognitoModeAvailability": 1,
   "AllowScreenLock": true,
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
@@ -108,6 +108,7 @@ echo '{
   "SmartLockSigninAllowed": "false",
   "PhoneHubAllowed": "false",
   "LacrosAvailability": "user_choice",
+  "LoginDisplayPasswordButtonEnabled": "false",
   "ArcPolicy": {
     "playStoreMode": "ENABLED",
     "installType": "FORCE_INSTALLED",
@@ -115,7 +116,7 @@ echo '{
     "dpsInteractionsDisabled": false
   },
   "DnsOverHttpsMode": "automatic",
-  "BrowserLabsEnabled": "true",
+  "BrowserLabsEnabled": "false",
   "ChromeOsReleaseChannelDelegated": "true",
   "SafeSitesFilterBehavior": "1",
   "SafeBrowsingProtectionLevel": "1",
@@ -129,6 +130,7 @@ echo '{
   "BlockThirdPartyCookies": "",
   "ChromeOsReleaseChannel": "",
   "FastPairEnabled": "true",
+  "UserFeedbackAllowed": "false",
   "WallpaperImage": {
       "hash": "null",
       "url": "null"
