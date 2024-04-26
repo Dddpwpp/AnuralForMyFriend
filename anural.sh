@@ -31,7 +31,8 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "javascript://", "javascript://*", "chrome://inspect" ],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com" ],
+  "URLAllowlist": [],
   "SystemFeaturesDisableList": [],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
