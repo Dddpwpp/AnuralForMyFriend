@@ -11,13 +11,7 @@ echo "# The User Policy Editor                       #"
 echo "# -------------------------------------------- #"
 echo "# Developers:                                  #"
 echo "# - Xotic                                      #"
-echo "# - OlyB                                       #"
-echo "# - Rafflesia                                  #"
-echo "# - Scaratek                                   #"
-echo "# - r58Playz                                   #"
-echo "# - Honkychunkymonkey - Additional Changes     #"
 echo "+##############################################+"
-echo "May Ultrablue Rest in Peace, o7"
 
 sleep 1
 
@@ -31,9 +25,9 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm" ],
-  "URLAllowlist": [],
-  "SystemFeaturesDisableList": [ crosh ],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm", "chrome://flags", "scratch.mit.edu", "win11.blueedge.com" ],
+  "URLAllowlist": [ "mpasd.schoology.com", "mpasd.net" ],
+  "SystemFeaturesDisableList": [],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "CACertificateManagementAllowed": "2",
@@ -45,13 +39,13 @@ echo '{
   "AllowScreenLock": false,
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
-  "ExtensionInstallBlocklist": null,
-  "ExtensionInstallForcelist": "cjpalhdlnbpafiamejdnhcphjbkeiagm",
+  "ExtensionInstallBlocklist": "hbkkncjljigpfhghnjhjaaimceakjdoo", "iocghaljaochhkgajdilelogdkejkiil",
+  "ExtensionInstallForcelist": "cjpalhdlnbpafiamejdnhcphjbkeiagm", "kbfnbcaeplbcioakkpcpgfkobkghlhen",
   "ExtensionSettings": null,
   "ReportDeviceAudioStatus": true,
   "ReportDeviceActivityTimes": true,
   "ReportCRDSessions": true,
-  "ReportDeviceAudioStatusCheckingRateMs": "900000",
+  "ReportDeviceAudioStatusCheckingRateMs": "null",
   "ReportDeviceBacklightInfo": true,
   "ReportDeviceBluetoothInfo": true,
   "ReportDeviceBoardStatus": true,
@@ -79,7 +73,7 @@ echo '{
   "ReportDeviceUsers": true,
   "ReportDeviceVersionInfo": true,
   "ReportDeviceVpdInfo": true,
-  "ReportUploadFrequency": 10800000,
+  "ReportUploadFrequency": null,
   "PasswordManagerEnabled": "false",
   "TaskManagerEndProcessEnabled": "false",
   "UptimeLimit": "17890",
@@ -87,7 +81,7 @@ echo '{
   "SystemTimezone": "",
   "IsolatedAppsDeveloperModeAllowed": "true",
   "ForceGoogleSafeSearch": "true",
-  "ForceYouTubeRestrict": "0",
+  "ForceYouTubeRestrict": "2",
   "EasyUnlockAllowed": "false",
   "DisableSafeBrowsingProceedAnyway": "false",
   "DeviceAllowNewUsers": "true",
@@ -103,6 +97,7 @@ echo '{
   "DeveloperToolsAvailability": "1",
   "DeviceBlockDevmode": "false",
   "UserBorealisAllowed": "true",
+  "HighContrastEnabled": "not set",
   "InstantTetheringAllowed": "true",
   "NearbyShareAllowed": "true",
   "PinnedLauncherApps": "null",
