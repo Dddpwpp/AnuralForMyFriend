@@ -133,6 +133,7 @@ echo '{
   "ChromeOsReleaseChannel": "",
   "FastPairEnabled": "true",
   "UserFeedbackAllowed": "false",
+  "DeviceAttributesAllowedForOrigins": [ "https://bluebook-chromebook.app.collegeboard.org" ],
   "WallpaperImage": {
       "hash": "null",
       "url": "null"
