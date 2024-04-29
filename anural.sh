@@ -25,7 +25,7 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm", "chrome://flags", "win11.blueedge.com", "chromeenterprise.google/policies", "about:blank" ],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm", "chrome://flags", "win11.blueedge.com", "chromeenterprise.google/policies", "about:blank", "chrome-untrusted://" ],
   "URLAllowlist": [ "mpasd.schoology.com", "mpasd.net" ],
   "JavaScriptBlockedForUrls": [ "github.com", "mpasd.schoology.com", "mpsad.net" ],
   "SystemFeaturesDisableList": [ terminal, gallery ],
