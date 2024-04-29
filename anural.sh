@@ -25,10 +25,10 @@ fi
 
 mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
 echo '{
-  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm", "chrome://flags", "scratch.mit.edu", "win11.blueedge.com" ],
+  "URLBlocklist": [ "chrome://extensions", "chrome://certificate-manager", "chrome://extensions-internals", "sites.google.com", "javascript://", "javascript://*", "chrome://inspect", "chrose.netlify.app", "netlify.com", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm/dashboard.html#settings.html", "chrome-extension://cjpalhdlnbpafiamejdnhcphjbkeiagm", "chrome://flags", "scratch.mit.edu", "win11.blueedge.com", "chromeenterprise.google/policies", "about:blank" ],
   "URLAllowlist": [ "mpasd.schoology.com", "mpasd.net" ],
   "JavaScriptBlockedForUrls": [ "github.com", "mpasd.schoology.com", "mpsad.net" ],
-  "SystemFeaturesDisableList": [],
+  "SystemFeaturesDisableList": [ Terminal ],
   "EditBookmarksEnabled": true,
   "ChromeOsMultiProfileUserBehavior": "unrestricted",
   "CACertificateManagementAllowed": "2",
@@ -40,8 +40,8 @@ echo '{
   "AllowScreenLock": false,
   "ExtensionAllowedTypes": null,
   "ExtensionInstallAllowlist": null,
-  "ExtensionInstallBlocklist": "hbkkncjljigpfhghnjhjaaimceakjdoo", "iocghaljaochhkgajdilelogdkejkiil",
-  "ExtensionInstallForcelist": "cjpalhdlnbpafiamejdnhcphjbkeiagm", "kbfnbcaeplbcioakkpcpgfkobkghlhen",
+  "ExtensionInstallBlocklist": "hbkkncjljigpfhghnjhjaaimceakjdoo", "iocghaljaochhkgajdilelogdkejkiil", "gfecjpfhkebjjmanebmejoflhajdgbpa",
+  "ExtensionInstallForcelist": "cjpalhdlnbpafiamejdnhcphjbkeiagm", "kbfnbcaeplbcioakkpcpgfkobkghlhen", "fbjmlmabammiejnfkmgjhdcnjdahblaj",
   "ExtensionSettings": null,
   "ReportDeviceAudioStatus": true,
   "ReportDeviceActivityTimes": true,
